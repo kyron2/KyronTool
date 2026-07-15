@@ -1,21 +1,25 @@
-# KyronTool
+# KYRON2 TOOL
 
-A simple command-line toolkit written in Python.
+A simple networking and cybersecurity learning tool made in Python.
 
 ## Features
-- Show private IP
-- Show public IP
-- Networking quiz
-- Count from 1 to 100
 
-## Technologies
-- Python 3
-- requests
-- socket
-
-## Future features
-- Ping
-- DNS lookup
+- Private/Public IP information
 - Password generator
 - Hash generator
-- Port scanner (for authorized targets)
+- Port scanner
+- DNS lookup
+- Ping tester
+- System information
+- Networking questionnaire
+
+## Technologies
+
+Python 3
+
+## Purpose
+
+This project was created to practice:
+- Python programming
+- Networking concepts
+- Cybersecurity fundamentals
