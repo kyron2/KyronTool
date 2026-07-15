@@ -23,3 +23,5 @@ This project was created to practice:
 - Python programming
 - Networking concepts
 - Cybersecurity fundamentals
+-------------------*--------------
+the password is "justmeknow"
