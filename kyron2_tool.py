@@ -131,7 +131,7 @@ def gerador_senhas():
 def gerador_hash():
     limpar_tela()
     print("--- HASH GENERATOR ---")
-    print("Which one do you want to encrypt?")
+    print("Which hash do you want to generate?")
     print('1 - MD5 ')
     print('2 - SHA-1')
     print('3 - SHA-256')
@@ -221,7 +221,61 @@ def informacoes_sistema():
 
     voltar_menu()
 
+def bin_hex():
+    print("--- DATA ENCODER ---\n")
 
+    tiktok = input('Enter a text (phrase) or a number: ')
+    limpar_tela()
+
+    print("--- DATA ENCODER ---\n")
+    print("What do you wanna convert it to?\n")
+    print("a) Binary")
+    print("b) Hexadecimal\n")
+
+    apple = input("Choice: ").lower()
+
+    if apple == "a" or apple == "bin":
+        if tiktok.isdigit():
+            print(bin(int(tiktok)))
+        else:
+            print(" ".join(format(ord(letra), '08b') for letra in tiktok))
+
+    elif apple == "b" or apple == "hex":
+        if tiktok.isdigit():
+            print(hex(int(tiktok)))
+        else:
+            print(" ".join(format(ord(letra), '02x') for letra in tiktok))
+
+    else:
+        print("Invalid option.")
+    voltar_menu()
+
+
+def port_scanner():
+    limpar_tela()
+    print("--- PORT SCANNER ---")
+
+    host = input("Enter an IP or domain: ")
+
+    limpar_tela()
+    print(f"Scanning {host}...\n")
+
+    ports = [20, 21, 22, 23, 25, 53, 80, 110, 143, 443, 3306, 3389, 8080]
+
+    for port in ports:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(0.5)
+
+        result = s.connect_ex((host, port))
+
+        if result == 0:
+            print(f"[OPEN] Port {port}")
+        else:
+            print(f"[CLOSED] Port {port}")
+
+        s.close()
+
+    voltar_menu()
 
 
 print("KYRON2 TOOL\n")
@@ -244,6 +298,7 @@ if user == user_correct:
         print("g) DNS Lookup")
         print("h) Ping Host")
         print("i) System Information")
+        print("j) Data Encoder")
         print("exit) Quit")
 
         user2 = input("\nchoose: ").lower()
@@ -266,6 +321,8 @@ if user == user_correct:
             ping_host()
         elif user2 == "i":
             informacoes_sistema()
+        elif user2 == "j":
+            bin_hex()
         elif user2 == "exit":
             print("Goodbye!")
             break
@@ -275,5 +332,3 @@ if user == user_correct:
 
 else:
     print("U DIDNT ENTER BOT")
-else:
-    print('U DIDNT ENTER BOT')
