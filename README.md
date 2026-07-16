@@ -1,27 +1,88 @@
-# KYRON2 TOOL
+# 🔥 KYRON2 TOOL
 
-A simple networking and cybersecurity learning tool made in Python.
+A Python-based networking and security utility created for learning and practicing Python, networking and cybersecurity concepts.
 
-## Features
+## 📌 About
 
-- Private/Public IP information
-- Password generator
-- Hash generator
-- Port scanner
-- DNS lookup
-- Ping tester
-- System information
-- Networking questionnaire
+KYRON2 TOOL is a terminal-based toolkit that brings together small utilities related to networking, security and system information.
 
-## Technologies
+This project was created to improve my Python skills and learn more about how networking tools work.
 
-Python 3
+## ⚙️ Features
 
-## Purpose
+- 🔢 Count numbers from 1 to 100
+- 🌐 IP Information
+  - Private IP
+  - Public IP
+- 🔐 Password Generator
+- #️⃣ Hash Generator
+  - MD5
+  - SHA-1
+  - SHA-256
+  - SHA-512
+- 🔎 DNS Lookup
+- 📡 Ping Host
+- 🖥️ System Information
+- 🔤 Data Encoder
+  - Text to Binary
+  - Text to Hexadecimal
+  - Number to Binary
+  - Number to Hexadecimal
+- 🚪 Port Scanner
 
-This project was created to practice:
-- Python programming
-- Networking concepts
-- Cybersecurity fundamentals
+## 🛠️ Technologies Used
+
+- Python 3
+- Socket
+- Requests
+- Hashlib
+- Platform
+- Random
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/KYRON2-TOOL.git
+```
+
+Enter the folder:
+
+```bash
+cd KYRON2-TOOL
+```
+
+Install requirements:
+
+```bash
+pip install requests
+```
+
+Run:
+
+```bash
+python3 main.py
+```
+
+## ⚠️ Disclaimer
+
+This tool was created for educational purposes only.
+
+Only use network scanning features on systems you own or have permission to test.
+
+## 🚀 Future Improvements
+
+- Better user interface
+- More networking tools
+- Faster port scanner
+- More encoding options
+- Better error handling
+
+## 👨‍💻 Author
+
+Bernardo
+
+Learning Python, Networking and Cybersecurity.
 -------------------*--------------
 the password is "justmeknow"
